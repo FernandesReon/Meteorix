@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <span class="name">SkyCast</span>
+                </div>
+                <div class="search-location">
+                    <input type="text" name="location" id="geo-location" placeholder="Search for cities"
+                        autocomplete="off" required>
+
+                    <div class="search">
+                        <button>Search</button>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <section class="home">
+            <div class="container">
+                <div class="main-data">
+
+                    <div class="data">
+                        <p class="location-name">Vasai</p>
+                        <h1 class="temperature">32<sup>°C</sup></h1>
+                        <p class="complemetary-data">
+                            <span class="condition">Clear Sky</span><br>
+                            <span class="max">35<sup>°C</sup></span> / <span class="min">30<sup>°C</sup></span>
+                            <br>
+                            <span class="feels_like">Feels like 32<sup>°C</sup></span>
+                        </p>
+                    </div>
+
+                    <div class="data-image">
+                        <img src="/images/clear-sky.svg" alt="" class="weather-icon">
+                    </div>
+                </div>
+
+                <div class="hr"></div>
+
+                <div class="weather-highlights">
+                    <div class="container">
+                        <div class="weather-details">
+                            <h2 class="highlights-title">Weather Details</h2>
+                            <div class="cards">
+                                <div class="card_info">
+                                    <span class="card-title">Sunrise</span>
+                                    <img src="/images/sunrise.svg" alt="">
+                                    <span class="card-value rise">8:18 AM</span>
+                                </div>
+                                <div class="card_info">
+                                    <span class="card-title">Sunset</span>
+                                    <img src="/images/sunset.svg" alt="">
+                                    <span class="card-value set">6:02 PM</span>
+                                </div>
+                                <div class="card_info">
+                                    <span class="card-title">Humidity</span>
+                                    <img src="/images/humidity.svg" alt="">
+                                    <span class="card-value humid">50%</span>
+                                </div>
+                                <div class="card_info">
+                                    <span class="card-title">Wind Speed</span>
+                                    <img src="/images/wind.svg" alt="" class="wind-icon">
+                                    <span class="card-value wind">20 km/h</span>
+                                </div>
+                                <div class="card_info">
+                                    <span class="card-title">Visibility</span>
+                                    <img src="/images/fog.svg" alt="">
+                                    <span class="card-value visible">5.06 km</span>
+                                </div>
+                                <div class="card_info">
+                                    <span class="card-title">Pressure</span>
+                                    <img src="/images/pressure/pressure-low-alt.svg" alt="" class="pressure-icon">
+                                    <span class="card-value pressure">1005 mb</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

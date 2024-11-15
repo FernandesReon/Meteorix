@@ -207,7 +207,7 @@ nav .container{
 
 /* footer */
 .footer-content{
-    padding: 2rem;
+    padding: 1rem;
     margin-top: 1rem;
     width: 100%;
     text-align: center;
@@ -234,6 +234,10 @@ nav .container{
 @media screen and (max-width: 660px) {
     .main-data{
         justify-content: center;
+    }
+
+    .footer-content span{
+        font-size: 0.8rem;
     }
 }
 
@@ -309,6 +313,10 @@ nav .container{
     .weather-details{
         padding: 0.6rem;
     }
+
+    .footer-content span{
+        font-size: 0.6rem;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -378,5 +386,9 @@ nav .container{
 
     .data{
         padding: 0.6rem;
+    }
+
+    .footer-content span{
+        font-size: 0.5rem;
     }
 }

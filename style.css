@@ -185,7 +185,7 @@ nav .container{
     margin-top: 1.2rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 1rem;
+    gap: 0.6rem;
 }
 
 .card_info{
@@ -260,15 +260,13 @@ nav .container{
     .weather-icon{
         max-width: 150px;
     }
-}
 
-@media screen and (max-width: 380px) {
-    .cards{
-        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    .weather-details{
+        padding: 0.6rem;
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
     .main-data{
         gap: 0.2rem;
     }
@@ -289,8 +287,21 @@ nav .container{
         max-width: 150px;
     }
 
-    .weather-details{
-        padding: 0.6rem;
+    .highlights-title{
+        font-size: 1.25rem;
+    }
+
+    .cards{
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    }
+
+    .card_info .card-title,
+    .card_info .card-value{
+        font-size: 0.85rem;
+    }
+
+    .card_info img{
+        max-width: 75px;
     }
 }
 
@@ -298,8 +309,10 @@ nav .container{
     .main-data{
         justify-content: center;
     }
+}
 
-    .cards{
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+@media screen and (max-width: 330px) {
+    .data{
+        padding: 0.6rem;
     }
 }
